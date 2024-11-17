@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <form action="">
+            <label for="name"><!--Ayuda a que al leer el texto en accesibilidad, este seleccione automáticamente el input. Si se hace click en el texto se activa el input.-->
+                <span>¿Cuál es su nombre?</span>
+                <input type="text" id="name">
+            </label>
+            <label for="study">
+                <span>¿Cuándo comenzaste a estudiar?</span>
+                <input type="date" id="study">
+            </label>
+            <label for="time">
+                <span>¿En que horario estudias?</span>
+                <input type="time" id="time">
+            </label>
+        </form>
+        <section>
+            <img src="./medium.jpg" alt="Perrito pug monísimo" title="Es una foto de un perrito pug negro"><!--Alt ayuda a proporcionar una descripción de la imagen cuando se lee la pantalla en accesibilidad. También es importante en caso de que la imagen no pueda ser encontrada. Ya que aparecerá la descripción.-->
+            <!--'title' hace que aparezca una descripción al posar el ratón sobre la imagen-->
+        </section>
+    </main>
+</body>
+</html>

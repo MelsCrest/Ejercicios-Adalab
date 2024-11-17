@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="">
+        <label for="nombre">
+            <span>¿Cuál es tu nombre?</span>
+            <input type="text" name="nombre" id="nombre" autocomplete="name" required><!--atributo 'autocomplete' y 'required'-->
+        </label>
+        <label for="correo">
+            <span>¿Cuál es tu correo electrónico?</span>
+            <input type="email" name="correo" id="correo" autocomplete="email" required>
+        </label>
+        <label for="pais">
+            <span>¿Cuál es tu país?</span>
+            <!--Etiqueta 'select'-->
+            <!-- <select name="paises" id="">
+                <option value="España">España</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Francia">Francia</option>
+            </select> -->
+            <!--Select con 'input' y 'datalist'. Buenas prácticas-->
+            <input list="paises">
+            <datalist id="paises">
+                <option value="España"></option>
+                <option value="Portugal"></option>
+                <option value="Francia"></option>
+                <option value="Andorra"></option>
+            </datalist>
+        </label>
+        <label for="cp">
+            <span>¿Cuál es tu código postal?</span>
+            <input type="text" name="cp" id="cp" autocomplete="postal-code" required>
+        </label>
+        <input type="submit">
+    </form>
+</body>
+</html>

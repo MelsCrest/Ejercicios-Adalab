@@ -1,0 +1,11 @@
+/*em - elemento. Toma el tamaño de fuente en px del padre directo. En un inicio lo toma de los 16px standar de HTML. Para calcular cuantos px son X em se multiplicaria su valor por el valor en px del tamaño de fuente del padre*/
+body{
+    font-size: 20px;
+}
+.text-container{
+    font-size: 1.5em;/* 1.5em = 30px. En este caso toma el tamaño de fuente en px del padre directo que es 'body', por lo que el valor de 1em = 20px (1.5 x 20 = 30px)*/
+}
+.text-container div{
+    font-size: 1.5em;/* 1.5em = 45px. En este caso toma como referencia el valor de su contenedor padre 'text-container', por lo que 1em = 30px (1.5 x 30 = 45px)*/
+}
+

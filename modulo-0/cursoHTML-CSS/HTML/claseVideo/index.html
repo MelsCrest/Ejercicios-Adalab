@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Probando la etiqueta video">
+    <meta name="robots" content="index,follow">
+    <title>Vídeo</title>
+</head>
+<body>
+    <header>
+        <h1>Etiqueta 'video' y 'source'</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Etiqueta 'video'</h2>
+            <h3>Atributos 'controls' y 'preload'</h3>
+            <ul>
+                <li>El atributo 'controls' muestra los controles (play, stop...).</li>
+                <li>El atributo 'preload="auto"' hace que el vídeo se empiece a descargar en el momento que se carga la página</li>
+                
+            </ul>
+            <h2>Etiqueta 'source'</h2>
+            <h3>Atributo 'src'</h3>
+            <ul>
+                <li>Creamos tantas etiquetas 'source' como formatos de vídeo tengamos. El navegador elegirá el formato que pueda reproducir.</li>
+                <li>Añadiendo a continuación del nombre de la ruta '#t=10,30' del src, elegimos el segundo que queremos que empiece el vídeo y el segundo en que pare.</li>
+            </ul>
+            <video controls preload="auto" width="500px">
+                <source src="Time1.mp4#t=10,30">
+            </video>
+        </section>
+    </main>
+</body>
+</html>

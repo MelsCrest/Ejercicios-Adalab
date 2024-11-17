@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes</title>
+    <!--Foto de Charles: https://www.pexels.com/es-es/foto/pug-negro-adulto-1851164/-->
+</head>
+<body>
+    <header>
+        <h1>Formatos de imagen</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Formatos lossless</h2>
+            <ul>
+                <li>Formatos sin pérdida.</li>
+                <li>No pierde calidad la  imagen.</li>
+                <li>Suelen ser pesadas.</li>
+                <li>GIF, PNG 8(logotipos, iconos fondo transparente, 256 colores), PNG 24(más de 256 colores, más pesado)</li>
+            </ul>
+            <h2>Formatos lossy</h2>
+            <ul>
+                <li>Menos calidad.</li>
+                <li>Se puede modificar el tamaño.</li>
+                <li>Menor tiempo de carga.</li>
+                <li>JPG/JPEG (para fotos, colores ilimitados, se puede comprimir aunque pierda calidad), SVG (iconos, logos. Se puede escalar sin perder calidad)</li>
+            </ul>
+            <h3>Preferible trabajar con Lossy</h3>
+            <h2>Optimización de imágenes</h2>
+            <ul>
+                <li>Tamaño promedio 70kb.</li>
+                <li>Para comprimir el tamaño de la imagen: <a href="https://tinypng.com/" target="_blank">tiny png</a> (funciona con png y jpg).</li>
+                <li>Para retirar los metadatos de la imagen (de aquellas echas con el móvil o cámaras que añaden esos datos): <a href="https://www.verexif.com/" target="_blank">verexif</a>.</li>
+                <li>Galería de imágenes: <a href="https://www.pexels.com/es-es/" target="_blank">pexels</a>.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Uso de las etiquetas 'figure', 'img' y 'figcaption'</h3>
+            <figure><!--Contenedor para la imagen-->
+                <img src="pics/large.jpg" alt="Perro de raza pug, negro, adulto" width="250px">
+                <figcaption>Imagen de un perro pug. Foto de Charles.</figcaption><!--Descripción, similar al alt, que pueda ayudar-->
+            </figure>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,24 @@
+/*Combinador hermano cercano - Adjacent sibling:
+Aplica el color a todos los párrafos que vayan justo después de una etiqueta h2 y estén al mismo nivel*/
+h2 + p{
+    color:red;
+}
+
+/*Combinador hermano general - General sibling
+Aplica el color a todos los párrafos que vayan por debajo de una etiqueta h2 y estén al mismo nivel. No es necesario que vayan justo después. */
+
+/* h2 ~ p{
+    color: green;
+} */
+
+/*Child:
+Se aplica el color a la etiqueta 'p' que sea hija directa de 'div', es decir, que se encuentre dentro de la etiqueta 'div' y no en otra etiqueta. */
+/* div > p {
+    color:blue;
+} */
+
+/*Descendant:
+Se aplica el color a todas las etiquetas 'p' que se encuentren dentro de un 'div', aunque estén dentro de otras etiquetas dentro del 'div'.*/
+/* div p{
+    color:orange;
+} */

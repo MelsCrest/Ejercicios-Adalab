@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1 id="page-title" class="title">Empresa</h1>
+        <!--Cuantos más selectores se usen, más especificidad se da-->
+        <!--No es recomendable usar tanto 'id' para dar estilo, es preferible llamar a otra clase para dar más especificidad. Ej: #main-nav .blog -> .nav .blog-->
+        <nav>
+            <ul id="main-nav" class="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">Cursos</a></li>
+                <li><a href="">Instructores</a></li>
+                <li><a href="" class="blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="main-section" class="seccion">
+            <p>Cuantos más selectores se usen, más especificidad se da. <span class="negrita">Ej: #page-title .title /  #main-nav .nav / .nav li / .nav .blog.</span></p>
+            <p>No es recomendable usar tanto 'id' para dar estilo, es preferible llamar a otra clase para dar más especificidad. <span class="negrita">Ej: #main-nav .blog → .nav .blog.</span></p> 
+        </section>
+    </main>
+</body>
+</html>

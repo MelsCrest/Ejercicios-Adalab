@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%; /*1rem = 10px*/
+}
+body{
+    font-size: 1.6rem;/*16px*/
+}
+.container{
+    border: 0.3rem solid black;
+    display: flex;/*por defecto su flex-direction es row*/
+    /*flex-direction: row-reverse; row, row-reverse, column, column-reverse */
+    flex-wrap: wrap;/*wrap, nowrap, wrap-reverse. Con wrap si el tamaño del contenedor se hace más pequeño los elemento se van acomodando dentro y el contenedor se va haciendo más grande o más pequeño*/
+    /*justify-content: center; Para la posición del contenido. Hay más opciones.*/
+    /*align-items: center;alineamiento vertical. Hay más opciones. Con la opción 'strech', si el contenido no tiene altura, este se alargará al 100% del contenedor padre. Con la opción 'baseline' y sin que el contenido tenga altura, se achicará hasta el tamaño de su contenido (por ejemplo un texto)*/
+    /*height:50vh;al 50% de cualquier pantalla*/
+}
+.box{
+    /* width: 10rem; */
+    height: 10rem;
+    flex-basis: 10rem;/**/
+    flex-grow: 1;
+}
+.box1{
+    background-color: red;
+    /*order:1 al añadir un orden este se colocará después de los elementos que no tengan orden.*/
+    /*flex-grow: 1; crecerá hasta completar el espacio que quede libre respetando el tamaño de los otros elementos*/
+    
+}
+.box2{
+    background-color: green;
+}
+.box3{
+    background-color: blue;
+}
+.box4{
+    background-color: blueviolet;
+}
+.box5{
+    background-color: orange;
+}
+.box6{
+    background-color: yellow;
+}

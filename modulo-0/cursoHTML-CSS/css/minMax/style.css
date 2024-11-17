@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*vw (view width) o vh (view height)*/ 
+main{
+    width: 100vw; 
+    height: 100vh;
+    /*Ocupa el 100% de la pantalla independientemente de su tamaño*/
+    background-color: purple;
+}
+/*Para min-width o max-width se necesita un width base cuyo valor sea en %*/
+/*Para min-height o max-height no es necesario un height base. Se marca directamente el tamaño límite*/
+section{
+    width: 80%; /*Hasta que llegue al mín o el máx, ocupara el 80% del tamaño de pantalla que sea*/
+    min-width: 320px; /*limita al tamaño menor, serán 320px lo que mida, ya no será el 80%*/
+    max-width: 500px; /*limita al tamaño mayor, serán 500px lo que mida, ya no será el 80%*/
+    height: 500px;
+    margin: 0 auto;/*margin 0 en top y bottom, margin ajustado al centro en derecha e izquierda*/
+    background-color: red;
+}

@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*rem -root em. El rem toma su valor de los 16px standar de HTML siempre*/
+html{
+    font-size: 62.5%;/*Añadiendo esto redondeamos el valor de 1rem = 10px*/
+}
+p{
+    font-size: 1.6rem; /*16px*/
+}
+main div{
+    font-size: 1.6rem; /*16px*/
+}

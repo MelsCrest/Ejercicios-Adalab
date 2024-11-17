@@ -1,0 +1,17 @@
+/*usar !import es una mala práctica*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+p{
+    font-size: 1.8rem;
+    /*caracterísitcas de la fuente Edu AU VIC WA NT Pre copiadas desde google*/
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400; /*elegir para esta fuente un valor entre 400 y 700*/
+    font-style: normal;
+}

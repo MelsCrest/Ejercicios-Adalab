@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidad y Orden</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <h2>¿Cómo se controla el orden al declarar CSS</h2>
+        <ol>
+            <li>Importancia</li>
+            <li>Especificidad</li>
+            <li>Orden en las fuentes</li>
+        </ol>
+        <p>Si dos declaraciones tienen la misma importancia, la especificidad de las reglas decidirá cuál se debe aplicar.</p>
+        <p>Si las reglas tienen la misma especificidad, el orden de las fuentes controla el resultado final.</p>
+    </section>
+    <section>
+        <h3>Importancia</h3>
+        <ol>
+            <li><p>Hoja de estilo de agente de usuario (Estilos del navegador)</p></li>
+            <li><p>Declaraciones normales en hojas de estilo de autor (Nuestro .css)</p></li>
+            <li><p>Declaraciones importantes en hojas de estilos de autor (utilizar el !important)</p></li>
+        </ol>
+        <h4>El '!important' es mala práctica</h4>
+    </section>
+    <section>
+        <h3>Especificidad</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Selectores</th>
+                    <th>Especificidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>!important</td>
+                    <td>1,0,0,0,0</td>
+                </tr>
+                <tr>
+                    <td>Inline styles</td>
+                    <td>0,1,0,0,0</td>
+                </tr>
+                <tr>
+                    <td>#id</td>
+                    <td>0,0,1,0,0</td>
+                </tr>
+                <tr>
+                    <td>.class</td>
+                    <td>0,0,0,1,0</td>
+                </tr>
+                <tr>
+                    <td>tag</td>
+                    <td>0,0,0,0,1</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Inline style: Estilo embebido, es decir, se aplica directamente en la etiqueta en el .html. Evitar, por ser mala práctica</h4>
+    </section>
+    <section>
+        <h3>Orden de las fuentes</h3>
+        <p>En tus estilos, las declaraciones al final del documento anularán a las que sucedan antes en caso de conflicto.</p>
+    </section>
+</body>
+</html>

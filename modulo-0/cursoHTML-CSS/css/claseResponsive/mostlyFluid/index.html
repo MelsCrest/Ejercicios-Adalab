@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive - Mostly Fluid - Media Queries</title>
+    <link rel="stylesheet" href="./style.css">
+    <!--Media Queries-->
+    <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 800px)">
+</head>
+<body>
+    <!--Breakpoint - Dimensión en el width o viewpoint donde se va a generar un cambio. Cambio donde se reposicionara los elementos o redimensionara los contenedores.-->
+    <!--Media Queries - determinan las medidas donde se producirán los cambios o breakpoint-->
+    <!--Mobile First o Mobile Only - Se prioriza diseñar primero para móvil y luego se irá creciendo-->
+    <!--Tamaños: @media{min-width:400px} / @media{min-width: 768px} / @media{min-width:1024px} en CSS-->
+    <!--Buena práctica: colocarlo en el head. Es decir, crear un archivo .css para cada pantalla (tablet, desktop) y linkar cada hoja de estilo en el head añadiendo un atributo 'media'-->
+    <!--Desde el head solo se leerá la línea que se vaya a necesitar en cada dispositivo. Desde el CSS cada dispositivo cargará todas las opciones.-->
+    <!--Mostly Fluid el diseño pasa desde el móvil a un ordenador pasando por pantallas intermedias-->
+    <main class="container">
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+        <div class="c4"></div>
+        <div class="c5"></div>
+    </main>
+</body>
+</html>

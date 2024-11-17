@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    margin: 50px;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+    #izquierda{
+        width: 550px;
+        height: 300px;
+        float:left;
+    }   
+
+        #nombre{
+            list-style: none;
+            padding-bottom: 5px;
+        }
+            p{
+                font-weight: bold;
+                color: rgb(60, 60, 60);
+            }
+            #ingrediente{
+                list-style: disc;
+                padding-top: 5px;
+            }
+            #ingrediente li{
+                    padding-bottom: 2px;
+                }
+    #derecha{
+        width: 300px;
+        height: 319px;
+    }
+        figure{
+            width: 300px;
+        }
+        figcaption{
+            text-align: end;
+            margin-right: 15px;
+            font-size: 12px;
+        }
+        img{
+            width: 300px;
+        }
+    a{
+        margin-left: 50px;
+        font-weight: bold;
+        text-decoration: none;
+    }

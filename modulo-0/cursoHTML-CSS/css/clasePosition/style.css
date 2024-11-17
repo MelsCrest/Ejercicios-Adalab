@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    border: 2px dotted black;
+    display: inline-block;
+}
+.box{
+    display: inline-block;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+#two{
+    background-color: green;
+}
+/*position:static; - El elemento queda estático. No se puede mover*/
+/*position: absolute; - El elemento sale de su plano y se sobrepone. Los elementos que hay debajo se recolocan para ocupar el hueco que haya dejado vacío. Se puede usar top , bottom, left y right para moverlo por la pantalla (tomando como punto 0 la parte de arriba, abajo, izquierda o derecha de la pantalla).*/
+/*position: relative; - El elemento sale de su plano y se sobrepone pero se respeta su hueco. Se puede usar top, bottom, left y right para moverlo por la pantalla (tomando como punto 0 la parte de arriba, abajo, izquierda o derecha de su esquina superior izquierda).*/
+/*position: sticky; - El elemento sale de su plano y se sobrepone. Se puede usar top, bottom, left y right para moverlo por la pantalla. Ahí donde se coloque quedara fijado aunque se haga scroll, el elemento permanecerá en esa posición*/
+/*position: fixed; - El elemento sale de su plano y se sobrepone. Se puede usar top, bottom, left y right para moverlo por la pantalla. Ahí donde se coloque quedara fijado hasta un determinado punto que se haya establecido. Al hacer scroll permanecerá quieto hasta llegar a ese punto donde se irá con el resto de información*/
+.boxes{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+#rojo{
+    background-color: red;
+    width: 225px;
+    height: 70px;
+    border-radius: 20px;
+    position: absolute;
+    top: 120px;
+}
+#rojo p{
+    text-align: center;
+    padding-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#gris{
+    background-color: grey;
+    width: 400px;
+    height: 250px;
+    border-radius: 50px;
+}
+#gris p{
+    text-align: center;
+    padding: 80px 50px 0px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+

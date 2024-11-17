@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Block e Inline</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--Display:block - usará el 100% del espacio que tiene delante sin importar si el contenido tiene o no espacio. Lo que hace que los elementos se coloque uno debajo de otro. En la mayoría de etiquetas, como 'div', 'p' y 'ul' viene por defecto.-->
+    <div class="block-element">Esta es una etiqueta div</div>
+    <p class="block-element">Esta es una etiqueta de párrafo</p>
+    <div class="block-element">
+        <p class="parrafo">Soy texto</p>
+        <p class="parrafo">Soy texto</p>
+        <p class="parrafo">Soy texto</p>
+    </div>
+    <!--Display:inline - usará solo el espacio del contenido. Lo que hace que los elementos puedan colocarse uno al lado del otro. No puede usarse el margin, ni el padding - top y bottom. Tampoco se le puede dar un width, ni un height. En algunas etiquetas, como 'span' viene por defecto.-->
+    <span>Soy una etiqueta span</span>
+    <span>Soy una etiqueta span</span>
+    <!--Display:inline-block - Fusiona lo mejor de las dos opciones. Se puede añadir margin y padding - top y bottom. También dar un width y un height. Ocupa solo el espacio del contenido pudiendo dejar que otros elementos se coloquen a continuación. -->
+    <!--Display:list-item - Por defecto este display de los elementos de una lista viene de forma vertical y ocupa el 100% del espacio, como en block. Un ejemplo es la etiqueta 'li'.-->
+    <ul class="nav">
+        <li>Home</li>
+        <li>Cursos</li>
+        <li>Instructores</li>
+        <li>Blog</li>
+    </ul>
+</body>
+</html>
