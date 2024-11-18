@@ -1,0 +1,27 @@
+*{
+    margin-left: 10px;
+}
+body{
+    background-color: #f3f4f5;
+}
+h1, h2, h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: black;
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color:#757575;
+}
+.bold-word{
+    font-weight: bold;
+    margin: 0;
+    color: #5b5b5b;
+}
+li{
+    color: rgb(169, 167, 167);
+}
+.latin{
+    list-style: lower-latin;
+}
