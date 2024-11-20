@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.box{
+    background-color: lightpink;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.box.row{
+    flex-direction: row;
+}
+
+.box.column{
+    flex-direction: column;
+}
+
+.item{
+    border: 1px solid red;
+    background-color: palevioletred;
+}

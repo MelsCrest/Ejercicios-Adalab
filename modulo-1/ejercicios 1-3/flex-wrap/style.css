@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: lightpink;
+    border: 1px solid black;
+    justify-content: flex-start; /*left también vale*/
+}
+.item{
+    width: 200px;
+    height: 100px;
+    background-color: palevioletred;
+    border: 1px solid purple;
+}
