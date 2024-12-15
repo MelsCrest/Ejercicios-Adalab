@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de modelo de caja</title>
+    <style>
+        input{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form class="js-form">
+        <h1>Elige una opción</h1>
+        <label for="option1">border-box</label>
+        <input type="radio" class="js-option1" id="option1" name="radio-option" value="border-box">
+        <label for="option2">content-box</label>
+        <input type="radio" class="js-option2" id="option2" name="radio-option" value="content-box">
+        <label for="">Ancho de la caja</label>
+        <input type="number" class="js-width">
+        <label for="">Padding del contenido</label>
+        <input type="number" class="js-padding">
+        <label for="">Elige un ancho para el borde</label>
+        <input type="number" class="js-border">
+        <input type="submit" class="js-btn">
+    </form>
+    <h2 class="js-msg"></h2>
+
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
