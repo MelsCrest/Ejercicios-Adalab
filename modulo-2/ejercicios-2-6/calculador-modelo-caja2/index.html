@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculador de modelo de caja 2</title>
+    <title>Calculador de modelo de caja</title>
     <style>
-        label, input{
+        input{
             display: block;
         }
     </style>
@@ -13,12 +13,10 @@
 <body>
     <form class="js-form">
         <h1>Elige una opción</h1>
-        <label for="box-type">Modelo de caja</label>
-        <select id="box-type" class="js-boxType">
-            <option value="border-box">border-box</option>
-            <option value="content-box">content-box</option>
-        </select>
-        
+        <label for="option1">border-box</label>
+        <input type="radio" class="js-option1" id="option1" name="radio-option" value="border-box">
+        <label for="option2">content-box</label>
+        <input type="radio" class="js-option2" id="option2" name="radio-option" value="content-box">
         <label for="">Ancho de la caja</label>
         <input type="number" class="js-width">
         <label for="">Padding del contenido</label>
@@ -27,7 +25,7 @@
         <input type="number" class="js-border">
         <input type="submit" class="js-btn">
     </form>
-    <p class="js-msg"></p>
+    <h2 class="js-msg"></h2>
 
     <script type="text/javascript" src="./main.js"></script>
 </body>

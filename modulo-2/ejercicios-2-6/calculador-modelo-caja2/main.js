@@ -1,5 +1,3 @@
-'use strict';
-
 const btn = document.querySelector('.js-btn');
 const msg = document.querySelector('.js-msg');
 
@@ -9,7 +7,7 @@ function calculateWidth(typeBox, widthBox, padding, borderSize){
     let contentSize = 0;
     let totalSize = 0;
     
-    if(typeBox){
+    if(typeBox === 'border-box'){
         contentSize = widthBox - (padding*2) - (borderSize*2);
         totalSize = widthBox;
     }else{
@@ -21,7 +19,7 @@ function calculateWidth(typeBox, widthBox, padding, borderSize){
 
 function handleClick(event){
     event.preventDefault();
-    const typeBox = document.querySelector('.js-boxType').value === "border-box";
+    const typeBox = document.querySelector('input[name="radio-option"]:checked').value;
     const widthBox = parseInt(document.querySelector('.js-width').value);
     const padding = parseInt(document.querySelector('.js-padding').value);
     const borderSize = parseInt(document.querySelector('.js-border').value);
