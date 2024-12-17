@@ -8,11 +8,7 @@ let listBooks = [];
 function handleForm(ev){
     ev.preventDefault();
     const value = ev.target.value;
-    if (listBooks.length === 0){
-        listBooks[0] = value; 
-    }else{
-        listBooks[listBooks.length] = value; 
-    };
+    listBooks[listBooks.length] = value;
 };
 
 function render(){
