@@ -1,5 +1,5 @@
 "use strict";
-const boxImg = document.querySelector(".js-box");
+
 const select = document.getElementById("select");
 const img1 = document.querySelector('.js-img1');
 const img2 = document.querySelector('.js-img2');
