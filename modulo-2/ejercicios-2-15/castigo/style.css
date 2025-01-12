@@ -1,0 +1,8 @@
+.box{
+    width: 100%;
+    padding-left: 15px;
+    background-color: black;
+    color: wheat;
+    border: 7px solid rgb(10, 73, 10);
+    height: fit-content;
+};
