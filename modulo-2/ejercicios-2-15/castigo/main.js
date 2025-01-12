@@ -22,12 +22,12 @@ for(let i = 0; i < 100; i++){
     board.appendChild(select);
     // darle color
     select.addEventListener('change', handleChange);
-    paragraph.style.color = selectedColor;
+    // paragraph.style.color = selectedColor;
 };
 
 function handleChange(event){
     const selectValue = event.currentTarget.selectedIndex;
     selectedColor = colors[selectValue];
-    console.log(selectedColor);
+    
 };
 
