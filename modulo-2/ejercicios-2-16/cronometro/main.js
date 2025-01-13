@@ -19,6 +19,7 @@ function handleStop(){
 };
 
 function handleReset(){
+    setInterval(pause);
 };
 
 btnStop.addEventListener('click', handleStop);
